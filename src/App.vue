@@ -1,20 +1,27 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class = "screen">
+    <h1>Входные данные</h1>
+    <Board/>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Board from './components/Board'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Board
   }
 }
 </script>
 
 <style>
+
+#img-logo {
+  width:150px;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -22,5 +29,12 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.screen {
+  align-items: center;
+  width: 50%;
+  margin:auto;
+  padding:1rem 0;
 }
 </style>
